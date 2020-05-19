@@ -20,7 +20,6 @@ class UsersController < ApplicationController
   def destroy
     user=User.find(params[:id])
     user.destroy
-    redirect_to action: :index
   end
   private
   def user_params
